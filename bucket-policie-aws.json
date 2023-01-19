@@ -1,13 +1,13 @@
 {
-  "Id": "Policy1674094897679",
   "Version": "2012-10-17",
+  "Id": "Policy1674094897679",
   "Statement": [
-    {
-      "Sid": "Stmt1674094810925",
-      "Action": "s3:*",
-      "Effect": "Allow",
-      "Resource": "arn:aws:s3:::app-museums-bucket",
-      "Principal": "*"
-    }
+      {
+          "Sid": "Stmt1674094810925",
+          "Effect": "Allow",
+          "Principal": "*",
+          "Action": "s3:*",
+          "Resource": "arn:aws:s3:::app-museums-bucket/*"
+      }
   ]
 }
